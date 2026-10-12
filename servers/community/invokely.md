@@ -34,7 +34,7 @@ With no API key, the connector uses Invokely's anonymous trial endpoint, limited
 
 ## Tools
 
-The connector forwards the tools and schemas returned by Invokely's hosted MCP service. The current service lists six statistics tools: `search_indicators`, `resolve_place`, `get_value`, `get_series`, `compare`, and `rank_places`. It also lists five workspace tools: `workspace_list`, `workspace_get`, `workspace_save`, `workspace_update`, and `workspace_delete`. Private workspace access is a Pro feature. Workspace deletion is irreversible, so review the service documentation and confirm before using that operation.
+The connector forwards the tools and schemas returned by Invokely's hosted MCP service. The current service lists six statistics tools: `search_indicators`, `resolve_place`, `get_value`, `get_series`, `compare`, and `rank_places`. It also lists five account-scoped workspace tools: `workspace_list`, `workspace_get`, `workspace_save`, `workspace_update`, and `workspace_delete`. Workspace tools require an authenticated account; saving or updating requires Pro. Existing items can be read, downloaded, and deleted on every plan. Deletion is irreversible, so review the service documentation and confirm with the user before using `workspace_delete`.
 
 Statistics results include source citations. Invokely's developer documentation describes the service and current tool behavior; its pricing page has current plan details.
 
